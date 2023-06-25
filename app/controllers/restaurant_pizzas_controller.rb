@@ -6,6 +6,7 @@ class RestaurantPizzasController < ApplicationController
             render json: rp, status: :created
         else
             render json: {message: "errors": ["validation errors"]}
+        end
     end
 
     private
